@@ -9,6 +9,11 @@ Public dotfiles for my development setup.
   - transparent UI highlights
   - remote clipboard support for tmux/SSH/herdr via OSC 52
   - Neo-tree enabled through LazyVim extras
+- `tmux/.config/tmux` — tmux config
+  - `C-a` primary prefix, `C-b` secondary prefix
+  - vi copy mode
+  - Alt-based pane/window/session navigation
+  - OSC 52 clipboard forwarding
 
 ## Install
 
@@ -17,14 +22,15 @@ This repo is organized for [GNU Stow](https://www.gnu.org/software/stow/):
 ```sh
 git clone https://github.com/Xav147/dotfiles-public.git ~/Projects/dotfiles-public
 cd ~/Projects/dotfiles-public
-stow nvim
+stow nvim tmux
 ```
 
 If files already exist, back them up first:
 
 ```sh
 mv ~/.config/nvim ~/.config/nvim.backup
-stow nvim
+mv ~/.config/tmux ~/.config/tmux.backup
+stow nvim tmux
 ```
 
 ## Notes
