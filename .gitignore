@@ -16,3 +16,7 @@ id_ed25519*
 # Neovim local/generated state
 nvim/.config/nvim/.luarc.json
 nvim/.config/nvim/lua/plugins/theme.lua
+
+# Local Pi session/debug state
+.pi-sessions/
+pi-debug.log
