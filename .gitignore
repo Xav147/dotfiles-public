@@ -1,0 +1,18 @@
+# OS/editor noise
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Secrets / local-only files
+.env
+.env.*
+*.pem
+*.key
+*.crt
+id_rsa*
+id_ed25519*
+
+# Neovim local/generated state
+nvim/.config/nvim/.luarc.json
+nvim/.config/nvim/lua/plugins/theme.lua
